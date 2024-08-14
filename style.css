@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Warm gradient background */
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chatbox-container {
+    width: 400px;
+    max-width: 90%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.chatbox {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: #4c4545;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 0;
+    border: 5px solid #007bff; /* Blue border for prominence */
+}
+
+.chatbox-header {
+    background: #007bff; /* Header background color */
+    color: rgb(90, 82, 82);
+    padding: 20px;
+    border-radius: 15px 15px 0 0; /* Rounded top corners */
+    text-align: center;
+    font-size: 24px; /* Larger font size for header */
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chatbox-messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background: url('https://www.transparenttextures.com/patterns/45-degree-fabric.png'); /* Patterned background */
+    border-bottom: 2px solid #ddd;
+}
+
+.chatbox-input {
+    display: flex;
+    border-top: 2px solid #ddd;
+    background: #f1f1f1;
+}
+
+.chatbox-input input {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 0 0 0 15px; /* Rounded bottom-left corner */
+    outline: none;
+    font-size: 16px; /* Larger font size for input */
+    background-color: #ffffff;
+}
+
+.chatbox-input button {
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0 0 15px 0; /* Rounded bottom-right corner */
+    cursor: pointer;
+    font-size: 16px; /* Larger font size for button */
+    transition: background-color 0.3s ease, transform 0.1s;
+}
+
+.chatbox-input button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+.message {
+    padding: 12px 20px;
+    margin: 5px 0;
+    border-radius: 12px;
+    max-width: 80%;
+    word-wrap: break-word;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.user-message {
+    background: #007bff;
+    color: white;
+    align-self: flex-end;
+    border-radius: 12px 12px 0 12px;
+}
+
+.bot-message {
+    background: #e1e1e1;
+    color: black;
+    align-self: flex-start;
+    border-radius: 12px 12px 12px 0;
+}
